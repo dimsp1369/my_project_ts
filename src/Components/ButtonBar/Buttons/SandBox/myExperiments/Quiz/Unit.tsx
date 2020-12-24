@@ -22,15 +22,13 @@ function Units(props: IProps) {
     const {el, i} = props
     return <div>
 
-        {i === props.currentQuiz && <>
-            {el.inputToggle &&
-            <>
-                {el.firstNum} {el.sign} {el.secondNum} =
+        {i === props.currentQuiz &&
+        <>{el.inputToggle ?
+            <>{el.firstNum} {el.sign} {el.secondNum} =
                 <input type="text" value={props.inputAnswer} onChange={e => props.setInputAnswer(e.target.value)}/>
                 <button onClick={() => props.acceptAnswer(el.id)}>Accept</button>
-            </>}
-            {!el.inputToggle && <>{el.firstNum} {el.sign} {el.secondNum} = {el.inputRes}
-                {i < 9 ? <button onClick={props.nextQuiz}>Next</button> :
+            </> : <>{el.firstNum} {el.sign} {el.secondNum} = {el.inputRes}
+                {i < 3 ? <button onClick={props.nextQuiz}>Next</button> :
                     <button onClick={() => props.setOpenResult(true)}>Done</button>}
             </>}
         </>}
