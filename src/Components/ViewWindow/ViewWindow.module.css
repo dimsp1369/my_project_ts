@@ -1,0 +1,15 @@
+.ViewWindow {
+    grid-area: vw;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    border: 2px black solid;
+    background: bisque;
+    color: black;
+
+}
+
+.content {
+
+}

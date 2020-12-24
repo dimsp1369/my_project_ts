@@ -1,0 +1,19 @@
+.Main {
+grid-area: nn;
+}
+
+.content {
+    display: grid;
+    grid-template-areas:
+    'cnt tdl qz calc';
+    grid-auto-columns: auto;
+    justify-items: center;
+    align-items: center;
+    grid-column-gap: 20px;
+}
+
+.item a{
+    color: black;
+    text-decoration: none;
+}
+

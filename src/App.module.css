@@ -1,0 +1,16 @@
+.App {
+    margin: 0px 100px 0px 100px;
+    width: auto;
+}
+
+.AppWrapper {
+    display: grid;
+    grid-template-areas:
+    'h'
+    'bb'
+    'vw';
+
+    grid-template-columns: auto;
+    grid-template-rows: 100px 40px 400px;
+    row-gap: 2px;
+}

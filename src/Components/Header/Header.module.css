@@ -1,0 +1,15 @@
+.Header {
+    grid-area: h;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    border: 2px black solid;
+    background: cadetblue;
+
+}
+
+.content {
+    color: white;
+
+}

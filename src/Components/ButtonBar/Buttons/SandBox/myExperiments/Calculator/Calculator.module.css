@@ -1,0 +1,17 @@
+.Main {
+grid-area: Calc;
+}
+
+.item {
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.inputStyle {
+    width: 30px;
+}
+
+

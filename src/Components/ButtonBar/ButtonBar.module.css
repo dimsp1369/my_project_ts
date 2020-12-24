@@ -1,0 +1,28 @@
+.ButtonBar {
+    grid-area: bb;
+
+    border: 2px black solid;
+    background: coral;
+    color: white;
+    padding: 5px;
+}
+
+.content {
+    display: grid;
+    grid-template-areas:
+    'su phb c s nn';
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+    grid-column-gap: 1px;
+
+}
+
+.item a {
+    color: black;
+    text-decoration: none;
+}
+
+.item a.active {
+    color: blue;
+}
